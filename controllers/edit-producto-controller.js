@@ -11,7 +11,7 @@ const obtenerProductoId = async() => {
     }
 
     const producto = await obtenerProductoApiId(id)
-    console.log(producto)
+
     const {nombreProducto, urlImg, categoria, precio, descuento, descripcion, precioFinal} = producto
     
     document.querySelector('[data-nombre]').value = nombreProducto
@@ -59,8 +59,7 @@ formulario.addEventListener('submit', async(e) => {
         mensaje.style.display = 'block'
         
         await editarProductoId({nombreProducto, urlImg, categoria, precio, descuento, descripcion, precioFinal, id})
-        setTimeout(() => {
-        }, 3000);
+
         return window.location.href = './productos.html'
     }
 
