@@ -1,0 +1,153 @@
+.section-productos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.productos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 10px;
+    padding: 0 10px;
+    border-radius: .2rem;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.671) 0%, rgb(255, 255, 255) 100%);
+}
+.todo-productos {
+    padding: 30px 0 20px;
+}
+
+.productos-header {
+    padding-bottom: 2rem;
+}
+.productos-titulos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.productos-titulos h2 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000DE;
+    font-weight: 700;
+    
+}
+.productos-titulos a {
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 4px;
+    padding: 10px 10px;
+    background-color: #54a5d4;
+    transition: .2s ease-in-out;
+    white-space: nowrap;
+}
+.productos-titulos a:hover {
+    background-color: #316282;
+}
+.productos-header p {
+    color: #0000008A;
+    margin-bottom: 1.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 2rem 1.5rem;
+    place-items: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    /* max-width: 220px; */
+    cursor: pointer;
+    
+}
+.card-imagen {
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+}
+.imagen-game {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 300ms ease;
+}
+.card:hover .imagen-game {
+    transform: scale(1.036);
+}
+
+.edit-svg {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(113deg) brightness(108%) contrast(101%);
+}
+.edit-svg:hover {
+    filter: invert(65%) sepia(14%) saturate(1438%) hue-rotate(158deg) brightness(89%) contrast(98%);
+}
+.delete-svg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(113deg) brightness(108%) contrast(101%);
+}
+.delete-svg:hover {
+    filter: invert(26%) sepia(44%) saturate(3347%) hue-rotate(345deg) brightness(96%) contrast(104%);
+}
+
+.card-contenido {
+    width: 100%;
+    margin-top: .8rem;
+}
+.card-contenido h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(46, 46, 46);
+}
+
+.card-precio {
+    margin-top: .5rem;
+}
+.card-pago span {
+    font-size: 19px;
+    line-height: 17px;
+    letter-spacing: 0.6px;
+    font-weight: 900;
+    color: rgb(33, 33, 33);
+}
+.card-pago sup {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card-descuento {
+    margin-top: .2rem;
+}
+.card-descuento sup {
+    font-size: 10px;
+    line-height: 8px;
+    color: rgba(0, 0, 0, 0.54);
+}
+.precio-real {
+    font-size: 14px;
+    line-height: 13px;
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: line-through;
+}
+.card-porcentaje {
+    font-size: 13px;
+    color: #FFF;
+    background-color: rgb(221, 48, 28);
+    font-weight: 500;
+    line-height: 13px;
+    padding: 3px 6px;
+    border-radius: 2px;
+}

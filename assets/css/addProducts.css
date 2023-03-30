@@ -1,0 +1,126 @@
+
+.agregar-productos {
+    background-image: url(../img/library_hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.agregar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.titulo {
+    background: rgba(0,0,0,.3098039216);
+    backdrop-filter: blur(20px);
+    max-width: 500px;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.titulo h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-weight: 200;
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.div-formulario {
+    background: rgba(0,0,0,.3098039216);
+    backdrop-filter: blur(20px);
+    max-width: 500px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+}
+
+.div-label label  {
+    color: #1999ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    text-transform: uppercase;
+    /* user-select: none; */
+}
+.div-label input, .div-label textarea, .div-label select {
+    border-radius: 2px;
+    color: #fff;
+    padding: 10px;
+    background-color: #32353c;
+    outline: none;
+    font-size: 15px;
+    grid-area: input;
+    border: 1px solid #32353c;
+    display: block;
+    width: 100%;
+    margin-top: 2px;
+    transition: .2s ease-in;
+}
+.div-label input:hover, .div-label textarea:hover, .div-label select:hover {
+    background-color: #434953;
+}
+.div-label textarea {
+    resize: none;
+}
+
+.formulario button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px;
+    color: #fff;
+    background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    border: 2px;
+    cursor: pointer;
+    letter-spacing: .05rem;
+    transition: .5s ease;
+}
+.formulario button:hover {
+    /* background: linear-gradient(90deg, #5ed7ff 0%, #2D73FF 100%); */
+    background: linear-gradient(90deg, #06BFFF 20%, #2D73FF 100%);
+}
+
+.formulario span {
+    color: #afafaf;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.datos-correctos {
+    display: none;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+.datos-correctos span {
+    color: lightgreen;
+}
+.datos-incorrectos {
+    display: none;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+.datos-incorrectos span {
+    color: #c15755;
+    text-decoration: none;
+    font-weight: 300;
+}

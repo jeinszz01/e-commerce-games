@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/addProducts.css">
+</head>
+<body>
+    <header>
+        <div class="header-principal">
+            <div class="logo-header">
+                <a href="../index.html">
+                    <img src="../assets/img/logo.svg" alt="logo-svg" />
+                    <h1>Alura<span>Geek</span></h1>
+                </a>
+            </div>
+            <div class="buscador">
+                <input class="input-search" type="search" name="buscar" id="" placeholder="¿Qué estás buscando?">
+                <span></span>
+                <div class="img-buscar"><img src="../assets/img/search.svg" alt="buscador-svg"></div>
+            </div>
+            <div class="img-buscar-mobile"><img src="../assets/img/search.svg" alt="buscador-svg"></div>
+            
+            <div class="boton-login-usuario">
+                <button class="data-login" data-login>
+                    <a href="/pages/login.html"><img src="../assets/img/user.svg" alt="boton-login"></a>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="agregar-productos">
+        <div class="agregar">
+            <div class="titulo">
+                <h2>Agregar Nuevo Producto</h2>
+            </div>
+            <div class="div-formulario">
+                <form class="formulario" id="form-create" data-form>
+                    <div class="div-label">
+                        <label for="url">URL de la Imagen</label>
+                        <input type="text" name="url" id="url" required data-url>
+                    </div>
+                    <div class="div-label">
+                        <label for="categoria">Categoría</label>
+                        <select name="categoria" id="categoria" data-categoria>
+                            <option value="0">--Selecciona una Categoría--</option>
+                            <option value="tendencia">Productos en Tendencia</option>
+                            <option value="aventura">Aventura y Acción</option>
+                            <option value="estrategia">Estrategia</option>
+                            <option value="casual">Casual</option>
+                            <option value="carreras">Carreras</option>
+                            <option value="terror">Terror</option>
+                        </select>
+                    </div>
+                    <div class="div-label">
+                        <label for="nombre">Nombre del Producto</label>
+                        <input type="text" name="nombre" id="nombre" required data-nombre>
+                    </div>
+                    <div class="div-label">
+                        <label for="precio">Precio Inicial</label>
+                        <input type="text" pattern="^\d*(\.\d{0,2})?$" name="precio" id="precio" placeholder="0.00" required data-precio>
+                    </div>
+                    <div class="div-label">
+                        <label for="descuento">Descuento a Aplicar (%)</label>
+                        <input type="number" name="descuento" id="descuento" data-descuento>
+                    </div>
+                    <div class="div-label">
+                        <label for="descripcion">Descripción</label>
+                        <textarea name="descripcion" id="descripcion" rows="3" required data-descripcion></textarea>
+                    </div>
+
+                    <button type="submit">Agregar Producto</button>
+                    <div class="datos-correctos" data-correctos><span>Producto Agregado Correctamente.</span></div>
+                    <div class="datos-incorrectos" data-mensaje><span>Todos los campos deben ser llenados obligatoriamente.</span></div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-principal">
+            <div class="button-idioma">
+                <button>
+                    <img class="world-svg" src="../assets/img/world.svg" alt="world">
+                    <span>Español (EU)</span>
+                    <img class="select-svg" src="../assets/img/select-arrows.svg" alt="select-arrows">
+                </button>
+            </div>
+            <div class="logo-footer">
+                <img src="../assets/img/logo.svg" alt="logo-svg" />
+                <h1>Alura<span>Geek</span></h1>
+            </div>
+            <div class="informacion-footer">
+                <ul>
+                    <li><a href="#">Información</a></li>
+                    <li><a href="#">Quienes Somos</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Asistencia</a></li>
+                    <li><a href="#">Anúncie Aquí</a></li>
+                </ul>
+            </div>
+            <div class="copy-footer">
+                <span>&#169;2023, Desarrollado por Jein J. Rojas.</span>
+                <span>Todas las marcas comerciales a las que se hace referencia son propiedad de sus respectivos dueños.</span>
+            </div>
+            <div class="privacidad-footer">
+                <ul>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Términos</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Ajustes de cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="../controllers/usuario-controller.js"></script>
+    <script type="module" src="../controllers/add-producto-controller.js"></script>
+    
+</body>
+</html>

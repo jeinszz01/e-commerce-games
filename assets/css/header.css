@@ -1,0 +1,175 @@
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--primary-color);
+}
+
+.header-principal {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.logo-header a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.logo-header img {
+    height: 44px;
+    width: auto;
+}
+.logo-header h1 {
+    color: var(--secondary-color);
+}
+.logo-header h1 span {
+    color: #fff;
+}
+
+.data-login {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    /** display: none; *****************/
+}
+.data-login img {
+    height: 40px;
+    width: auto;
+}
+.data-login img:hover {
+    filter: invert(94%) sepia(94%) saturate(0%) hue-rotate(244deg) brightness(200%) contrast(200%);
+}
+
+.flecha {
+    width: 13px;
+    height: 13px;
+    filter: invert(94%) sepia(3%) saturate(216%) hue-rotate(349deg) brightness(80%) contrast(83%);
+}
+
+.usuario {
+    color: var(--secondary-color);
+    display: flex;  /****/
+    align-items: center;
+    justify-content: center;
+}
+.hola {
+    margin-right: 10px;
+}
+.lista-usuario {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+.lista-usuario:hover span {
+    color: #fff;
+}
+.lista-usuario:hover img {
+    filter: invert(94%) sepia(98%) saturate(3825%) hue-rotate(185deg) brightness(129%) contrast(100%);
+}
+.lista-usuario:hover .cerrar-sesion {
+    display: block;
+}
+.lista-usuario:focus {
+    display: block;
+}
+.cerrar-sesion {
+    width: auto;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    list-style: none;
+    display: none;
+    white-space: nowrap;
+    text-align: right;
+}
+/* .cerrar-sesion:hover {
+    color: #fff;
+} */
+.cerrar-sesion li a {
+    cursor: pointer;
+    padding-top: 11px;
+}
+.cerrar-sesion li a:hover {
+    color: #fff;
+}
+.cerrar-sesion li button {
+    cursor: pointer;
+    padding: 5px 0;
+}
+.cerrar-sesion li button:hover {
+    color: #fff;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 38px;
+    background: #316282;
+    box-shadow: inset 0 0 4px #000000;
+    border-radius: 3px;
+    position: relative;
+}
+.input-search {
+    width: 210px;
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 4px 10px 4px 5px;
+}
+.input-search::placeholder {
+    color: #213744;
+    text-shadow: 1px 1px 0px rgb(255 255 255 / 10%);
+}
+.input-search:focus::placeholder {
+    color: transparent;
+    text-shadow: none;
+}
+.img-buscar, .img-buscar-mobile {
+    background-color: #54a5d4;
+    width: 30px;
+    height: 30px;
+    border-radius:3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 4px;
+    right: 2.5px;
+}
+.img-buscar:hover, .img-buscar-mobile:hover {
+    background-color: #69b5e0;
+}
+.img-buscar img, .img-buscar-mobile img {
+    height: 20px;
+    width: 20px;
+}
+.img-buscar-mobile {
+    display: none;
+    position: inherit;
+}
+
+
+@media (max-width: 635px) {
+    .buscador {
+        display: none;
+    }
+    .img-buscar-mobile {
+        display: flex;
+    }
+    
+}

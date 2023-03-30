@@ -1,0 +1,138 @@
+
+footer {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: hsla(0,0%,100%,0.7);
+    padding: 2rem 10px 4rem 10px;
+}
+
+.button-idioma button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.button-idioma button img {
+    transition: .2s ease;
+    filter: invert(52%) sepia(98%) saturate(3331%) hue-rotate(177deg) brightness(99%) contrast(105%);
+}
+.button-idioma button span {
+    transition: .2s ease;
+}
+.button-idioma button:hover span {
+    color: #fff;
+}
+.button-idioma button:hover img{
+    color: #37b0fc;
+    filter: invert(67%) sepia(37%) saturate(5121%) hue-rotate(179deg) brightness(102%) contrast(120%);
+}
+.world-svg {
+    width: 24px;
+    height: 24px;
+}
+.select-svg {
+    width: 16px;
+    height: 16px;
+}
+
+.logo-footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.logo-footer img {
+    height: 80px;
+    width: auto;
+    cursor: pointer;
+}
+.logo-footer h1 {
+    color: var(--secondary-color);
+    font-size: 40px;
+    cursor: pointer;
+}
+.logo-footer h1 span {
+    color: #fff;
+    font-size: 40px;
+}
+
+.informacion-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.informacion-footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 1.7;
+}
+.informacion-footer ul li::after {
+    position: relative;
+    content: '';
+    width: 1px;
+    height: 10px;
+    background-color: hsla(0,0%,100%,0.3);
+    display: inline-block;
+    pointer-events: none;
+    right: -11px;
+    width: 1px;
+}
+.informacion-footer ul li:last-child::after {
+    background-color: transparent;
+}
+
+.informacion-footer ul li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+.informacion-footer ul li a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+.copy-footer {
+    margin: 2rem 0 .2rem 0;
+}
+.copy-footer span {
+    text-align: center;
+    font-size: 12px;
+    display: block;
+}
+
+.privacidad-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.privacidad-footer ul li {
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 1.7;
+}
+.privacidad-footer ul li a {
+    font-weight: 700;
+    transition: .2s ease-in-out;
+}
+.privacidad-footer ul li a:hover {
+    color: hsl(0, 0%, 100%);
+}
+.privacidad-footer ul li::after {
+    position: relative;
+    content: '';
+    width: 1px;
+    height: 10px;
+    background-color: hsla(0,0%,100%,0.3);
+    display: inline-block;
+    pointer-events: none;
+    right: -11px;
+    width: 1px;
+}
+.privacidad-footer ul li:last-child::after {
+    background-color: transparent;
+}

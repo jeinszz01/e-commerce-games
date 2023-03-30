@@ -1,0 +1,46 @@
+
+.main {
+    width: 100%;
+}
+
+.imagen-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 0 10px; */
+}
+
+.imagen-content {
+    width: 100%;
+    /* max-width: 1200px; */
+    background-color: #fff;
+    padding: 1rem 0;
+}
+.imagen-not-found img {
+    width: 100%;
+    max-width: 500px;
+}
+.imagen-not-found p {
+    font-size: 28px;
+}
+.imagen-not-found a {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px;
+    color: #fff;
+    background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+
+    cursor: pointer;
+    letter-spacing: .05rem;
+    transition: .5s ease;
+    display: block;
+}
+
+.imagen-not-found a:hover {
+    background: linear-gradient(90deg, #06BFFF 20%, #2D73FF 100%);
+}

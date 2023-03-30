@@ -1,0 +1,15 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "![imagen-demo](./assets/img/demo1.png)\r ![imagen-demo](./assets/img/demo4.png)\r # Demo\r [Puedes ver el proyecto aquí 🚀](https://tourmaline-sable-24956a.netlify.app)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "e-commerce",
+    "project"
+  ],
+  "author": "jeinszz01",
+  "license": "ISC"
+}

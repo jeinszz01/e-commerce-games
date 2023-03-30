@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek Login</title>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/banner.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+    <header>
+        <div class="header-principal">
+            <div class="logo-header">
+                <a href="../index.html">
+                    <img src="../assets/img/logo.svg" alt="logo-svg" />
+                    <h1>Alura<span>Geek</span></h1>
+                </a>
+            </div>
+            <div class="buscador">
+                <input class="input-search" type="search" name="buscar" id="" placeholder="¿Qué estás buscando?">
+                <span></span>
+                <div class="img-buscar"><img src="../assets/img/search.svg" alt="buscador-svg"></div>
+            </div>
+            <div class="img-buscar-mobile"><img src="../assets/img/search.svg" alt="buscador-svg"></div>
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="login-principal">
+            <div class="titulo">
+                <h2>Iniciar Sesión</h2>
+            </div>
+            <div class="formulario-qr">
+                <form action="" class="formulario" data-form>
+                    <div class="usuario-login">
+                        <label for="usuario">Inicia sesión con tu nombre de cuenta</label>
+                        <input type="text" name="usuario" id="usuario" data-usuario>
+                    </div>
+                    <div class="password-login">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" autocomplete="on" id="password" data-password>
+                    </div>
+                    <div class="recordarme">
+                        <input class="check-recordarme" type="checkbox" name="" id="recordarme">
+                        <label for="recordarme">Recordarme</label>
+                    </div>
+                    <button type="submit">Iniciar Sesión</button>
+                    <div class="datos-incorrectos" data-mensaje><span>Comprueba tu contraseña y nombre de cuenta e inténtalo de nuevo.</span></div>
+                    <span><a href="#">Ayuda, no puedo iniciar sesión</a></span>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-principal">
+            <div class="button-idioma">
+                <button>
+                    <img class="world-svg" src="../assets/img/world.svg" alt="world">
+                    <span>Español (EU)</span>
+                    <img class="select-svg" src="../assets/img/select-arrows.svg" alt="select-arrows">
+                </button>
+            </div>
+            <div class="logo-footer">
+                <img src="../assets/img/logo.svg" alt="logo-svg" />
+                <h1>Alura<span>Geek</span></h1>
+            </div>
+            <div class="informacion-footer">
+                <ul>
+                    <li><a href="#">Información</a></li>
+                    <li><a href="#">Quienes Somos</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Asistencia</a></li>
+                    <li><a href="#">Anúncie Aquí</a></li>
+                </ul>
+            </div>
+            <div class="copy-footer">
+                <span>&#169;2023, Desarrollado por Jein J. Rojas.</span>
+                <span>Todas las marcas comerciales a las que se hace referencia son propiedad de sus respectivos dueños.</span>
+                
+            </div>
+            <div class="privacidad-footer">
+                <ul>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Términos</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Ajustes de cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="../controllers/login-controller.js"></script>
+</body>
+</html>

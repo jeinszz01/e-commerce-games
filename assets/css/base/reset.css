@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/font/Roboto-Regular.ttf);
+}
+:root {
+    --primary-color: #171a21;
+    --secondary-color: #b8b6b4;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background-image: url(../../img/banner2.gif);
+}
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+    border: none;
+    background-color: unset;
+}

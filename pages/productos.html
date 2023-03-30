@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos Admin</title>
+        <link rel="stylesheet" href="../assets/css/base/reset.css">
+        <link rel="stylesheet" href="../assets/css/header.css">
+        <link rel="stylesheet" href="../assets/css/banner.css">
+        <link rel="stylesheet" href="../assets/css/footer.css">
+        <link rel="stylesheet" href="../assets/css/productos.css">
+    </head>
+<body>
+    <header>
+        <div class="header-principal">
+            <div class="logo-header">
+                <a href="../index.html">
+                    <img src="../assets/img/logo.svg" alt="logo-svg" />
+                    <h1>Alura<span>Geek</span></h1>
+                </a>
+            </div>
+            <div class="buscador">
+                <form>
+                    <input class="input-search" type="text" id="search-item" onkeyup="search()" placeholder="¿Qué estás buscando?">
+                    <span></span>
+                    <div class="img-buscar"><img src="../assets/img/search.svg" alt="buscador-svg"></div>
+                </form>
+                
+            </div>
+            <div class="img-buscar-mobile"><img src="../assets/img/search.svg" alt="buscador-svg"></div>
+            
+            <div class="boton-login-usuario">
+                <button class="data-login" data-login>
+                    <a href="/pages/login.html"><img src="../assets/img/user.svg" alt="boton-login"></a>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-productos">
+        <div class="productos">
+            
+            <div class="todo-productos">
+                <div class="productos-header">
+                    <div class="productos-titulos">
+                        <h2>Todos los Productos</h2>
+                        <a href="./addProduct.html">Agregar Producto</a>
+                    </div>
+                </div>
+                <div class="cards" data-cards>
+                    
+                    <!-- Cards Impreso dinamico -->
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="footer-principal">
+            <div class="button-idioma">
+                <button>
+                    <img class="world-svg" src="../assets/img/world.svg" alt="world">
+                    <span>Español (EU)</span>
+                    <img class="select-svg" src="../assets/img/select-arrows.svg" alt="select-arrows">
+                </button>
+            </div>
+            <div class="logo-footer">
+                <img src="../assets/img/logo.svg" alt="logo-svg" />
+                <h1>Alura<span>Geek</span></h1>
+            </div>
+            <div class="informacion-footer">
+                <ul>
+                    <li><a href="#">Información</a></li>
+                    <li><a href="#">Quienes Somos</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Asistencia</a></li>
+                    <li><a href="#">Anúncie Aquí</a></li>
+                </ul>
+            </div>
+            <div class="copy-footer">
+                <span>&#169;2023, Desarrollado por Jein J. Rojas.</span>
+                <span>Todas las marcas comerciales a las que se hace referencia son propiedad de sus respectivos dueños.</span>
+                
+            </div>
+            <div class="privacidad-footer">
+                <ul>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Términos</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Ajustes de cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../controllers/search-producto.js"></script>
+    <script type="module" src="../controllers/usuario-controller.js"></script>
+    <script type="module" src="../controllers/producto-controller.js"></script>
+</body>
+</html>
