@@ -18,7 +18,7 @@ formulario.addEventListener('submit', async(e) => {
     if(descuento==='') {
         descuento = 0
     }
-    
+
     if(categoria==='0') {
         categoriaInput.style.border = '1px solid #c15755'
         const mensajeError = document.querySelector('[data-mensaje]')
@@ -34,9 +34,8 @@ formulario.addEventListener('submit', async(e) => {
         mensaje.style.display = 'block'
         
         await guardarProductos({nombreProducto, urlImg, categoria, precio, descuento, descripcion, precioFinal})
-        //setTimeout(() => {
         return window.location.href = './productos.html'
-        //}, 3000);
+
     }
     
     
