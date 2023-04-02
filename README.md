@@ -2,7 +2,7 @@
 ![imagen-demo](./assets/img/demo1.png)
 ![imagen-demo](./assets/img/demo4.png)
 # Demo
-[Puedes ver el proyecto aquí 🚀](https://tourmaline-sable-24956a.netlify.app)
+[Puedes ver el proyecto aquí 🚀](https://taupe-dodol-54fe4c.netlify.app)
 
 ---
 ## Sección Principal
@@ -36,7 +36,7 @@ En esta sección te muestra un formulario con las respectivas validaciones, el c
 Clona este repositorio en tu maquina local usando el comando "git clone".
 ```
     # Clone the repository
-    $ git clone https://github.com/jeinszz01/Ecommerce_Games.git
+    $ git clone https://github.com/jeinszz01/e-commerce-games.git
     # Move into the repository
     $ cd Ecommerce_Games.git
 ```
