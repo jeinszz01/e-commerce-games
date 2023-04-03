@@ -54,3 +54,7 @@ Clona este repositorio en tu maquina local usando el comando "git clone".
 # Stack and tools 🛠️
 Las únicas herramientas utilizadas fueron Html, Css, JavaScript y JsonServer.
 No se usaron librerías ni packetes.
+# Características Adicionales
+- Uso de PromiseAll: mejorar el performance del proyecto.
+- Spinner css agregado.
+- Filtro por categorías agregado.

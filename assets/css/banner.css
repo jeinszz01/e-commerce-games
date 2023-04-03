@@ -36,14 +36,12 @@
     padding: 1rem 2rem;
     text-shadow: 0px 2px 3px rgb(0 0 0 / 30%);
     display: inline-block;
-    
+    text-align: center;
 }
 .categorias ul li:hover {
     color: var(--secondary-color);
 }
-.categorias ul li a {
-    white-space: nowrap;
-}
+
 
 .juegos {
     width: 100%;

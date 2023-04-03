@@ -40,11 +40,17 @@ const eliminarProductoId = async(id) => {
     })
 }
 
+const obtenerProductosCategoria = async(categoria) => {
+    const respuesta = await fetch(`https://games-server-wwtb.onrender.com/products?categoria=${categoria}`)
+    return await respuesta.json()
+}
+
 export {
     conectarUsuario,
     obtenerProductos,
     guardarProductos,
     obtenerProductoApiId,
     editarProductoId,
-    eliminarProductoId
+    eliminarProductoId,
+    obtenerProductosCategoria
 }
